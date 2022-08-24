@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigeria Jollof</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          102.7deg,
+          rgb(253, 218, 255) 8.2%,
+          rgb(223, 173, 252) 19.6%,
+          rgb(173, 205, 252) 36.8%,
+          rgb(173, 252, 244) 73.2%,
+          rgb(202, 248, 208) 90.9%
+        );
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(43, 5, 78);
+        border: 1px solid #7d51e8;
+      }
+      h2 {
+        text-align: center;
+        padding: 16px;
+        font-size: 20px;
+        border-radius: 6px;
+      }
+      h3 {
+        text-align: center;
+      }
+      hr {
+        width: 100%;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 0px auto;
+        border-radius: 10%;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        color: black;
+
+        transition: all 200ms ease;
+      }
+
+      button {
+        display: block;
+        margin: 30px auto 16px;
+        padding: 15px 120px;
+        border: 1px solid #7d51e8;
+        border-radius: 20px 10px;
+        font-size: 20px;
+        transition: all 300ms ease-in-out;
+        color: rgb(36, 7, 63);
+        background: #e5d2c4;
+        box-shadow: 5px 5px 10px rgba(221, 88, 88, 0.5);
+      }
+      button:hover {
+        background-color: rgb(192, 49, 49);
+        color: blue;
+        cursor: grab;
+      }
+      .container {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 2px 70px;
+        background-image: linear-gradient(
+          106.5deg,
+          rgba(255, 215, 185, 0.91) 23%,
+          rgba(223, 159, 247, 0.8) 93%
+        );
+      }
+      .info {
+        font-size: 13px;
+        color: rgb(37, 34, 39);
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      .info:hover {
+        text-decoration: underline;
+        color: brown;
+        cursor: grab;
+      }
+      .footer {
+        text-align: center;
+        font-weight: 300;
+      }
+      .person {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🍛 I Love Jollof Rice</h1>
+      <h2>Especially Nigeria Jollof Rice</h2>
+      <hr />
+      <img src="Jollof_Rice_with_Stew_1.jpg" alt="jolluf rice" />
+      <hr />
+      <h3>Ingredents:</h3>
+      <p>
+        Jollof rice traditionally consists of rice, cooking oil, vegetables such
+        as tomato, onion, red pepper, garlic, ginger and Scotch bonnet chilli
+        peppers. To enhance the colour of the dish, tomato paste (purée) is
+        added. As seasoning, spices, salt, stock cubes (a blend of flavour
+        enhancers, salt, nutmeg and herbs), curry powder and dried thyme are
+        used. To complement the dish, chicken, turkey, beef or fish are often
+        served with the dish.
+        <br />
+        <strong><em>Nigerian jollof </em></strong>strong considerable variation
+        exists, the basic profile for Nigerian jollof rice includes long-grain
+        parboiled rice, tomatoes and tomato paste, pepper, vegetable oil,
+        onions, and stock cubes. Most of the ingredients are cooked in one pot,
+        of which a rich meat stock and a fried tomato and pepper puree
+        characteristically forms the base. Rice is then added and left to cook
+        in the liquid. The dish is then served with the protein of choice and
+        very often with fried plantains, moi moi, steamed vegetables, coleslaw,
+        salad, etc. In the riverine areas of Nigeria where seafood is the main
+        source of protein, seafood often takes the place of chicken or meat as
+        the protein of choice
+      </p>
+      <p>
+        Each <strong>West African</strong> country has at least one variant form
+        of the dish, with Ghana, Nigeria, Sierra Leone, Liberia and Cameroon
+        particularly competitive as to which country makes the best jollof. This
+        is especially prominent between Nigeria and Ghana, in a rivalry dubbed
+        the "Jollof Wars".
+      </p>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Jollof_rice"
+        target="_blank"
+        class="info"
+        >👉 Read More On Wikipedia 👈</a
+      >
+      <br />
+      <button>Try Nigeria Jollof 🥘</button>
+      <p class="footer">
+        <strong>Coded By <em class="person">Victory Ilikah</em></strong>
+      </p>
+    </div>
+    <script>
+      function jollof() {
+        let name = prompt("What is your name?");
+        let country = prompt("Are you from Nigeria?");
+        let taste = prompt("Have you tried Nigeria Jollof Rice");
+        if (taste === "yes") {
+          alert(`😎 Welcome ${name},have alot of Nigeria Jollof Rice.🇳🇬 😋`);
+        } else {
+          alert(
+            `😱😭 Welcome ${name},You have to try Nigeria Jollof Rice, You don't know what you are missing.`
+          );
+        }
+      }
+      let jollofButton = document.querySelector("button");
+      jollofButton.addEventListener("click", jollof);
+    </script>
+  </body>
+</html>
