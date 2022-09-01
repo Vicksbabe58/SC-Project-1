@@ -1,2 +1,2 @@
-# SC-tasks-1
+# SC-Project-1
 SheCodes basics final project
